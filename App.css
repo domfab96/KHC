@@ -744,6 +744,15 @@ footer{
 }
 
 
+.footer_copyright{
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid var(--color-light);
+  margin-top: 0.6rem;
+}
+
+
 /* ================= MEDIA QUERIES (TABLET) ================ */
 
 @media screen and (max-width:1024px){
@@ -752,7 +761,7 @@ footer{
   .window-scroll{
   background: var(--color-bg-light);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
+ }
   
   .container{
     width: var(--container-width-md);
@@ -830,6 +839,10 @@ footer{
 
   /* ===HEADER === */
 
+  #header::before{
+    top:-15rem;
+  }
+
   .header_right .header_img img{
     width: 15rem;
 
@@ -896,7 +909,7 @@ footer{
 
 /* =========== MEDIA QUERIES (MOBILE-PHONES) */
 
-@media screen  and (max-width: 600px){
+@media screen  and  (max-width: 600px){
 
   .window-scroll{
     background: var(--color-bg-light);
@@ -1034,4 +1047,73 @@ footer{
   }
 
   
+}
+
+
+/* =========== MEDIA QUERIES (MOBILE-PHONES) */
+
+@media screen and (max-width:450px){
+  
+
+  .about_container{
+    padding: 1rem 1.3rem;
+  }
+
+  .service_text h2{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+  }
+
+  .review_container{
+    padding: 0;
+  
+  }
+  .review_left{
+    padding: 1.2rem;
+  }
+
+  .review_text p{
+    margin-bottom: 1rem;
+  }
+
+
+  #contacts .container{
+    padding: 0;
+  }
+
+ .contact_container{
+   padding: 1.3rem;
+ }
+
+ .contact_left{
+   width: 100%;
+ }
+  .contact_form input[type = "text"] {
+    width: 40%;
+    
+  }
+
+  .contact_form button{
+    width: 30%;
+  }
+
+  input, textarea{
+    width:85%;
+  }
+
+  .contact_2-details .email{
+    padding-right: 3rem;
+  }
+
+  .contact_right h3{
+    color:var(--color-bg-light);
+  }
+
+  .contact_sub-container h1{
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+
 }
